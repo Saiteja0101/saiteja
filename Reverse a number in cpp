@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main(){
+  int n,rem, reverse_No;
+  cin>>n;
+  while(n!=0){
+    rem=n%10;
+    reverse_No=reverse_No*10+rem;
+    n=n/10;
+  }
+  cout<<reverse_No<<endl;
+  return 0;
+}
